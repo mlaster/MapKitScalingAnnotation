@@ -18,6 +18,7 @@
     MKCoordinateRegion region = {};
     MKMapView *mapView = (MKMapView *)[self view];
 
+    // zoom the map onto Cupertino
     span.longitudeDelta = 0.05;
     span.latitudeDelta = 0.05;
     coord.latitude = 37.331786;
@@ -42,9 +43,31 @@
 
 - (void) addCircleWithCoordinate:(CLLocationCoordinate2D) inCenter
                           radius:(CGFloat) inRadius {
+    MKMapView *mapView = (MKMapView *)[self view];
+    UIView *anchorView = nil;
+    UIView *debugView = nil;
+
     NSLog(@"STUB: addCircleWithCoordinate:radius:");
     NSLog(@"center: %f/%f  radius: %f m", inCenter.latitude, inCenter.longitude, inRadius);
     // TO-DO: Figure out how to draw a circle that scales
+
+    anchorView = [[[[[[mapView subviews] objectAtIndex:0] subviews] objectAtIndex:0] subviews] objectAtIndex:0];
+    NSLog(@"anchorView: %@", anchorView);
+    NSLog(@"anchorView bounds: %@", NSStringFromCGRect([anchorView bounds]));
+    NSLog(@"anchorView superview bounds: %@", NSStringFromCGRect([[anchorView superview] bounds]));
+
+    debugView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 42.0, 42.0)];
+    [debugView setBackgroundColor:[[UIColor redColor] colorWithAlphaComponent:0.5]];
+    NSLog(@"debugView: %@", debugView);
+    
+    [anchorView addSubview:debugView];
+    CGRect rect = [[anchorView superview] convertRect:[[anchorView superview] bounds] toView:anchorView];
+    NSLog(@"rect: %@", NSStringFromCGRect(rect));
+    NSLog(@"BEFORE debugView: %@", debugView);
+    [debugView setFrame:rect];
+    NSLog(@"AFTER debugView: %@", debugView);
+    NSLog(@"debugView layer: %@", NSStringFromCGRect([[debugView layer] frame]));
+    
 }
 
 @end
