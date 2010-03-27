@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		196153B8115E7CBC00B83577 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196153B7115E7CBC00B83577 /* MapKit.framework */; };
 		196153CF115E7D6A00B83577 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196153CE115E7D6A00B83577 /* MapViewController.m */; };
+		19615579115EAA1E00B83577 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19615578115EAA1E00B83577 /* CustomView.m */; };
 		1D3623260D0F684500981E51 /* MapKitScalingAnnotationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MapKitScalingAnnotationAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -21,6 +22,8 @@
 		196153B7115E7CBC00B83577 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		196153CD115E7D6A00B83577 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		196153CE115E7D6A00B83577 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		19615577115EAA1E00B83577 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		19615578115EAA1E00B83577 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* MapKitScalingAnnotationAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitScalingAnnotationAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* MapKitScalingAnnotationAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKitScalingAnnotationAppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				19615577115EAA1E00B83577 /* CustomView.h */,
+				19615578115EAA1E00B83577 /* CustomView.m */,
 				1D3623240D0F684500981E51 /* MapKitScalingAnnotationAppDelegate.h */,
 				1D3623250D0F684500981E51 /* MapKitScalingAnnotationAppDelegate.m */,
 				196153CD115E7D6A00B83577 /* MapViewController.h */,
@@ -164,6 +169,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MapKitScalingAnnotationAppDelegate.m in Sources */,
 				196153CF115E7D6A00B83577 /* MapViewController.m in Sources */,
+				19615579115EAA1E00B83577 /* CustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
