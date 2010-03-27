@@ -1,0 +1,5 @@
+This project is an experiment in hacking MapKit.
+
+The Goal is simple:
+
+Draw a 1000 m circle around 1 Infinite Loop that scales with the map
